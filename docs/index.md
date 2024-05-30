@@ -6,19 +6,19 @@ hero:
   text: "文档副标题"
   tagline: "文档标语"
   image:
-    src: '/image/logo.png'
-    alt: '网页的logo图标'
-  
+    src: "/image/logo.png"
+    alt: "网页的logo图标"
+
   actions:
     - theme: brand
-      text: '示例'
+      text: "示例"
       link: /markdown-examples
     - theme: brand
-      text: '开始使用'
+      text: "开始使用"
       link: /markdown-examples
     - theme: alt
-      text: '在 gitee 上查看'
-      link: 'https://gitee.com/csdn-mzh/mzh-vitepress'
+      text: "在 gitee 上查看"
+      link: "https://gitee.com/csdn-mzh/mzh-vitepress"
 
 features:
   - icon: 🛠️
@@ -50,3 +50,11 @@ features:
     link: https://router.vuejs.org/zh/
 ---
 
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { fetchVersion } from './.vitepress/utils/fetchVersion'
+
+onMounted(() => {
+  fetchVersion()
+})
+</script>

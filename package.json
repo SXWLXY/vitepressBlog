@@ -1,8 +1,9 @@
 {
-  "name": "vue-project-docs",
+  "name": "vitepress-blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "docs:deploy": "sh deploy.sh",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -22,6 +23,7 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.2.0",
     "vitepress": "^1.2.2"
   },
   "eslintConfig": {
@@ -43,5 +45,22 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SXWLXY/vitepressBlog.git"
+  },
+  "keywords": [
+    "front-end",
+    "notes"
+  ],
+  "author": "themusecatcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SXWLXY/vitepressBlog/issues"
+  },
+  "homepage": "https://github.com/SXWLXY/vitepressBlog#readme"
 }
