@@ -1,9 +1,10 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "网站标题",
   description: "网站描述",
+  base: "/vitepressBlog/",
 
   // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
   lastUpdated: true, // string | boolean
@@ -75,11 +76,11 @@ export default defineConfig({
 
     //顶部导航最右边社交链接配置
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-      { icon: 'twitter', link: 'https://gitee.com/csdn-mzh/mzh-vitepress' },
-      { icon: 'discord', link: 'https://gitee.com/csdn-mzh/mzh-vitepress' },
-      { icon: 'facebook', link: 'https://gitee.com/csdn-mzh/mzh-vitepress' },
-      { icon: 'instagram', link: 'https://gitee.com/csdn-mzh/mzh-vitepress' },
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "twitter", link: "https://gitee.com/csdn-mzh/mzh-vitepress" },
+      { icon: "discord", link: "https://gitee.com/csdn-mzh/mzh-vitepress" },
+      { icon: "facebook", link: "https://gitee.com/csdn-mzh/mzh-vitepress" },
+      { icon: "instagram", link: "https://gitee.com/csdn-mzh/mzh-vitepress" },
       // | 'discord'
       // | 'facebook'
       // | 'github'
@@ -97,7 +98,6 @@ export default defineConfig({
       // }
     ],
 
-
     //自定义文章内容编辑链接
     //目前只是一个样式，想要真正实现对接 https://vitepress.dev/zh/reference/default-theme-edit-link#site-level-config
     editLink: {
@@ -109,5 +109,5 @@ export default defineConfig({
       message: "Released under the MIT License",
       copyright: "Copyright © 2024-mzh",
     },
-  }
-})
+  },
+});
